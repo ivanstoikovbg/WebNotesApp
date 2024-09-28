@@ -1,0 +1,79 @@
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+body {
+    background-color: #edf2f7;
+}
+
+.note-container {
+    animation: fadeIn 0.5s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transform: scale(1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    margin: 2rem;
+}
+
+.note-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+}
+
+.note-header {
+    background-color: #667eea;
+    color: #fff;
+    padding: 1rem;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.note-title {
+    font-size: 2rem;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+.note-body {
+    padding: 1rem;
+}
+
+.note-body p {
+    word-wrap: break-word;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    color: #333;
+    font-size: 1.2rem; 
+}
+
+.note-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #fff;
+}
+
+.author-info {
+    font-size: 0.9rem;
+    color: #6B7280; 
+    margin-top: 0.5rem; 
+}
+
+.share-btn {
+    background-color: #667eea;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.share-btn:hover {
+    background-color: #7f9cf5;
+    transform: scale(1.05);
+}
